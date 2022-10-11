@@ -1,15 +1,13 @@
 /**
  * @file Assignment1.cpp
- * @author your name (you@domain.com)
- * @brief 
- * @version 0.1
- * @date 2022-10-07
+ * @author Hammad Anwer (2021189) and Mian Akbar Jan (2021295)
+ * @brief The driver code for the entire program
  * 
- * @copyright Copyright (c) 2022
+ * To compile the file run g++ Assignment1.cpp GridList.cpp -o assign1.exe
+ * To run the file execute the assign1.exe file with the command ./assign1
+ * 
  * 
  */
-
-
 
 #include "GridList.h"
 
@@ -22,8 +20,8 @@ void menu()
     cout << "3. Search a phone number by name" << endl;
     cout << "4. Search a phone number by address" << endl;
     cout << "5. Search a phone number by email" << endl;
-    cout << "6. Display all numbers" << endl;
-    cout << "7. Search a phone number by number" << endl;
+    cout << "6. Search a phone number by number (faster search)" << endl;
+    cout << "7. Display all numbers" << endl;
     cout << "0. Exit!" << endl;
 }
 
@@ -45,6 +43,7 @@ int main()
         {
         case 1:
         {
+            //exception handling
             try
             {
                 list.insertNode();
@@ -56,7 +55,6 @@ int main()
             }
             break;
         }
-
         case 2:
         {
             
@@ -122,12 +120,8 @@ int main()
             }
             break;
         }
+        
         case 6:
-        {
-            list.displayNodes();
-            break;
-        }
-        case 7:
         {
             cout << "Enter phone number to search: ";
             string phoneAdd;
@@ -142,6 +136,11 @@ int main()
             {
                 cout << "Not found" << endl;
             }
+            break;
+        }
+        case 7:
+        {
+            list.displayNodes();
             break;
         }
         case 0:

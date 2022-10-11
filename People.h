@@ -4,6 +4,8 @@
 
 using namespace std;
 
+
+// gives const value names to the array indexes
 enum PeopleInfo
 {
     phoneNumber,

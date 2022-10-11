@@ -15,8 +15,8 @@ private:
     int maxSize;
     GridListNode *head, *tail;
 
-    bool isFull() const { return numElements == maxSize; }
-    bool isEmpty() const { return numElements == 0; }
+    bool isFull() const { return numElements == maxSize; } //checks if list is full
+    bool isEmpty() const { return numElements == 0; } //checks if list is empty
     GridListNode *normalSearch(string searchElem, const PeopleInfo &pInfo) const;
     GridListNode *fastSearch(string searchElem) const;
     
