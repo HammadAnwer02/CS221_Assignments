@@ -1,5 +1,12 @@
 {
     "files.associations": {
-        "xstring": "cpp"
+        "*.ejs": "html",
+        "xstring": "cpp",
+        "xiosbase": "cpp",
+        "iostream": "cpp",
+        "string": "cpp",
+        "regex": "cpp",
+        "iosfwd": "cpp",
+        "ostream": "cpp"
     }
 }
